@@ -1,0 +1,26 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --primary: #dddddd;
+    --secondary: #ffffff;
+}
+body {
+    position: relative;
+    width: 100%;
+    background-color: var(--primary);
+}
+main {
+    position: absolute;
+    width: 80vw;
+    height: 95vh;
+    top: 2.5vh;
+    left: 10vw;
+    background-color: var(--secondary);
+}
+section {
+    display: flex;
+    flex-direction: row;
+}

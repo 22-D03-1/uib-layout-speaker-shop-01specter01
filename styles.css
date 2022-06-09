@@ -2,10 +2,12 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: "Work Sans", sans-serif;
 }
 :root {
     --primary: #dddddd;
     --secondary: #ffffff;
+    --textcolor: #b196c9;
 }
 body {
     position: relative;
@@ -23,4 +25,54 @@ main {
 section {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    color: var(--textcolor);
+    margin: 20px;
+    font-weight: bold;
+}
+#shopname {
+    color: black;
+}
+#soundicon {
+    width: 20px;
+}
+.left {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+.right {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+button {
+    background-color: black;
+    color: var(--secondary);
+    display: flex;
+    justify-content: baseline;
+    padding: 5px;
+}
+#section-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 18rem;
+    gap: 10px;
+}
+article img {
+    width: 20vw;
+    height: 30vh;
+    aspect-ratio: 1/2;
+}
+article img:first-child {
+    object-fit: cover;
+    object-position: center;
+}
+article img:last-child {
+    object-fit: cover;
+    object-position: center;
+}
+article img#second-pic {
+    object-fit: cover;
+    object-position: left;
 }

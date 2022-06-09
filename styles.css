@@ -51,12 +51,12 @@ button {
     color: var(--secondary);
     display: flex;
     justify-content: baseline;
-    padding: 5px;
+    padding: 1px;
 }
 #section-1 {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 18rem;
+    grid-template-columns: 3, 1fr;
+    grid-template-rows: 8rem;
     gap: 10px;
 }
 article img {
@@ -75,4 +75,32 @@ article img:last-child {
 article img#second-pic {
     object-fit: cover;
     object-position: left;
+}
+footer p {
+    color: gray;
+
+    position: absolute;
+    bottom: 0;
+
+    right: 50px;
+    height: 30px;
+    width: 100vw;
+}
+@media (min-width: 400px) and (max-width: 900px) {
+    #section-1 {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: auto;
+        align-items: center;
+        justify-content: center;
+    }
+}
+@media (min-width: 900px) and (max-width: 2100px) {
+    #section-1 {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto;
+        align-items: center;
+        justify-content: center;
+    }
 }
